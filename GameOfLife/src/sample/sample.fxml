@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <center>
+        <Canvas fx:id="canvas" height="800.0" onMouseClicked="#onMouseClickedListener" width="800.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </Canvas>
+    </center>
+   <left>
+        <AnchorPane maxWidth="150.0" minWidth="150.0" prefHeight="900.0" prefWidth="100.0" style="-fx-background-color: #e6e6e6;" BorderPane.alignment="CENTER">
+            <children>
+
+                <Button layoutX="30.0" layoutY="10.0" mnemonicParsing="false" onAction="#gliderBtn" prefHeight="25.0" prefWidth="90.0" text="Glider" />
+                <Button layoutX="30.0" layoutY="40.0" mnemonicParsing="false" onAction="#beehiveBtn" prefHeight="25.0" prefWidth="90.0" text="Beehive" />
+                <Button layoutX="30.0" layoutY="70.0" mnemonicParsing="false" onAction="#oscillatorBtn" prefHeight="25.0" prefWidth="90.0" text="Oscillator" />
+                <Button layoutX="30.0" layoutY="100.0" mnemonicParsing="false" onAction="#randomBtn" prefHeight="25.0" prefWidth="90.0" text="Random" />
+                <TextField fx:id="width" layoutX="30.0" layoutY="150.0" prefHeight="25.0" prefWidth="90.0" promptText="Width" />
+                <TextField fx:id="length" layoutX="30.0" layoutY="180.0" prefHeight="25.0" prefWidth="90.0" promptText="Length" />
+                <Button layoutX="30.0" layoutY="210.0" mnemonicParsing="false" onAction="#showBtn" prefHeight="25.0" prefWidth="90.0" text="Show" />
+                <Button layoutX="30.0" layoutY="240.0" mnemonicParsing="false" onAction="#clearBtn" prefHeight="25.0" prefWidth="90.0" text="Clear" />
+                <Button layoutX="30.0" layoutY="330.0" mnemonicParsing="false" onAction="#startBtnAct" prefHeight="25.0" prefWidth="90.0" text="Start" />
+                <Button layoutX="30.0" layoutY="360.0" mnemonicParsing="false" onAction="#stopBtnAct" prefHeight="25.0" prefWidth="90.0" text="Stop" />
+
+            </children>
+        </AnchorPane>
+   </left>
+</BorderPane>
